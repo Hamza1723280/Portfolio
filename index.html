@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>Hamza | Frontend Developer</title>
-    <link rel="stylesheet" href="asset/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/style.css">
+    <link rel="icon" href="Asset/picture/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="Asset/picture/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="Asset/picture/apple-touch-icon.png">
+    <meta name="theme-color" content="#0b0d11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Asset/bootstrap.min.css">
+    <link rel="stylesheet" href="Asset/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container navbar">
-            <a href="#home" class="logo">Hamza</a>
+    <header class="header" id="header">
+        <div class="wrap site-nav">
+            <a href="#home" class="logo">
+                <span class="logo-mark">H</span>
+                Hamza
+            </a>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -24,64 +35,88 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">Work</a></li>
                     <li><a href="#clients">Clients</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero" id="home">
-        <div class="container hero-content">
+        <div class="wrap hero-grid">
             <div class="hero-text">
-                <p class="eyebrow">Frontend Developer</p>
-                <h1>Hi, I'm <span>Hamza</span></h1>
-                <h3>I build clean, responsive websites.</h3>
-                <p>
-                    HTML and CSS are my strongest skills. I also work with Bootstrap,
-                    and I am currently growing my JavaScript and jQuery.
+                <p class="eyebrow">Frontend Developer · Karachi</p>
+                <h1>Designing calm,<br>precise websites.</h1>
+                <p class="lead">
+                    I am Hamza. I build professional, responsive interfaces with
+                    HTML, CSS and Bootstrap — structured, readable, and ready for real use.
                 </p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn">Hire Me</a>
-                    <a href="https://wa.me/923365069729" class="btn btn-whatsapp" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    <a href="#projects" class="btn-main">View work</a>
+                    <a href="mailto:hamzadha12@gmail.com" class="btn-ghost">
+                        <i class="fa-regular fa-envelope"></i> Email
                     </a>
                 </div>
             </div>
 
-            <div class="hero-image">
-                <!-- Apni photo yahan lagao: asset/images/profile.jpg -->
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
-                    alt="Hamza profile photo">
+            <div class="hero-portrait">
+                <div class="portrait-shell">
+                    <div class="portrait-frame">
+                        <img src="Asset/picture/profile.jpg" alt="Hamza profile photo">
+                    </div>
+                </div>
+                <p class="portrait-caption">Available for freelance work</p>
+            </div>
+        </div>
+
+        <div class="wrap hero-meta">
+            <div>
+                <strong>HTML / CSS</strong>
+                <span>Core craft</span>
+            </div>
+            <div>
+                <strong>Bootstrap</strong>
+                <span>Layout systems</span>
+            </div>
+            <div>
+                <strong>01 Featured</strong>
+                <span>Main project</span>
+            </div>
+            <div>
+                <strong>00 Clients</strong>
+                <span>Open to start</span>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <div class="container about-content">
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
-                    alt="Hamza">
+        <div class="wrap about-grid">
+            <div class="about-label">
+                <p class="eyebrow">About</p>
+                <h2>A focused frontend practice.</h2>
             </div>
-            <div class="about-text">
-                <h2>About Me</h2>
+            <div class="about-copy">
                 <p>
-                    I am a frontend developer focused on professional layouts,
-                    readable typography, and websites that look good on every screen.
+                    I care about spacing, type, and colour. My work is mostly one-page
+                    websites with a clear structure — plus one main project that shows
+                    how I handle a fuller layout.
                 </p>
                 <p>
-                    I am confident in HTML and CSS, comfortable with Bootstrap,
-                    and building my JavaScript step by step.
+                    HTML and CSS are complete for me. Bootstrap is comfortable.
+                    JavaScript and jQuery are early, so I keep interaction simple and reliable.
                 </p>
             </div>
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-list">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow">Capabilities</p>
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-panel">
                 <div class="skill">
                     <div class="skill-top">
                         <span>HTML</span>
@@ -122,33 +157,55 @@
     </section>
 
     <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="project-container">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow">Selected work</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <article class="featured">
+                <div class="featured-media">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop" alt="Main featured project">
+                </div>
+                <div class="featured-body">
+                    <p class="tag">Featured · Main project</p>
+                    <h3>Business website</h3>
+                    <p>
+                        A fuller multi-section site — navigation, services, and a complete
+                        page structure rather than a single landing screen.
+                    </p>
+                    <p class="stack">HTML · CSS · Bootstrap</p>
+                    <a href="https://alpine-ascents-76.netlify.app/" target="_blank" class="text-link">Open project <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <p class="group-title">One-page websites</p>
+            <div class="onepage-grid">
                 <article class="project-card">
-                    <img src="asset/images/Card 1.jfif" alt="Portfolio website">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop" alt="Landing page">
                     <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Responsive personal portfolio with a clean layout.</p>
-                        <a href="#" class="project-btn" target="_blank" rel="noopener">View Project</a>
+                        <p class="tag">One page</p>
+                        <h3>Mt First Website</h3>
+                        <p>My first single-page website, built to learn basic HTML and CSS.</p>
+                        <a href="https://first-web-96.netlify.app/" target="_blank" class="text-link">View <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
-
                 <article class="project-card">
-                    <img src="asset/images/Card 2.jfif" alt="Landing page">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop" alt="Portfolio one pager">
                     <div class="project-content">
-                        <h3>Landing Page</h3>
-                        <p>Modern landing page built with HTML, CSS and Bootstrap.</p>
-                        <a href="#" class="project-btn" target="_blank" rel="noopener">View Project</a>
+                        <p class="tag">One page</p>
+                        <h3>Demo Portfolio</h3>
+                        <p>A compact introduction and work summary.</p>
+                        <a href="https://demo-portfolio-96.netlify.app/" target="_blank" class="text-link">View <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
-
                 <article class="project-card">
-                    <img src="asset/images/Card 3.jfif" alt="Blog website">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop" alt="Service one pager">
                     <div class="project-content">
-                        <h3>Blog Website</h3>
-                        <p>Simple, readable blog layout for desktop and mobile.</p>
-                        <a href="#" class="project-btn" target="_blank" rel="noopener">View Project</a>
+                        <p class="tag">One page</p>
+                        <h3>Contact Form</h3>
+                        <p>A simple services and enquiry page.</p>
+                        <a href="https://contact-form-96.netlify.app/" target="_blank" class="text-link">View <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -156,58 +213,87 @@
     </section>
 
     <section class="clients" id="clients">
-        <div class="container">
-            <h2 class="section-title">Clients</h2>
-            <div class="client-box">
-                <p class="client-count">0</p>
-                <p class="client-label">Clients so far</p>
-                <p>I am just getting started and available for new work.</p>
+        <div class="wrap clients-row">
+            <div>
+                <p class="eyebrow">Practice</p>
+                <h2>Clients</h2>
+                <p>No client projects yet. I am available for a first collaboration.</p>
+            </div>
+            <div class="client-stat">
+                <span>00</span>
+                <small>Clients</small>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+        <div class="wrap contact-grid">
+            <div class="contact-info">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s talk.</h2>
+                <p>Email me anytime, or use WhatsApp if you want a quicker reply.</p>
 
-            <div class="social-row">
-                <a class="social-card whatsapp" href="https://wa.me/923365069729" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <div>
-                        <strong>WhatsApp</strong>
-                        <span>0336 5069729</span>
-                    </div>
+                <a class="contact-line" href="mailto:hamzadha12@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>
+                        <strong>Email</strong>
+                        hamzadha12@gmail.com
+                    </span>
                 </a>
-                <a class="social-card instagram" href="https://www.instagram.com/s.hamza_shah/" target="_blank" rel="noopener">
+                <a class="contact-line" href="https://wa.me/923365069729" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>
+                        <strong>WhatsApp</strong>
+                        0336 5069729
+                    </span>
+                </a>
+                <a class="contact-line" href="https://github.com/Hamza1723280" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                    <span>
+                        <strong>GitHub</strong>
+                        @Hamza1723280
+                    </span>
+                </a>
+                <a class="contact-line" href="https://www.instagram.com/s.hamza_shah/" target="_blank" rel="noopener">
                     <i class="fa-brands fa-instagram"></i>
-                    <div>
+                    <span>
                         <strong>Instagram</strong>
-                        <span>@s.hamza_shah</span>
-                    </div>
+                        @s.hamza_shah
+                    </span>
                 </a>
             </div>
 
-            <form class="contact-form" id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/.netlify/functions/contact">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="_subject" value="New message from Hamza portfolio">
+                <p class="hp">
+                    <label>Leave blank <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label>
+                </p>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit" id="sendBtn">Send message</button>
                 <p class="form-note" id="formNote"></p>
             </form>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2026 Hamza Portfolio | All Rights Reserved</p>
-        <p class="footer-note">Hosted on Netlify</p>
+        <div class="wrap footer-row">
+            <p>© 2026 Hamza</p>
+            <p>
+                Frontend ·
+                <a href="https://github.com/Hamza1723280" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
     </footer>
 
     <a class="whatsapp-float" href="https://wa.me/923365069729" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="asset/java.js"></script>
-    <script src="asset/bootstrap.min.js"></script>
+    <script src="Asset/java.js"></script>
+    <script src="Asset/bootstrap.min.js"></script>
 </body>
 
 </html>
